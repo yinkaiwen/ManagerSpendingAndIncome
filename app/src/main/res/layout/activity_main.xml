@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kevin.managerspendingandincome.activity.MainActivity">
+
+    <include layout="@layout/activity_tool_bar"/>
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.kevin.managerspendingandincome.activity.MainActivity"
+        tools:showIn="@layout/activity_main">
+
+        <TextView
+            android:id="@+id/textview_show_assets"
+            style="@style/main_text_style"
+            android:text="@string/text_view_look_up_assets"
+            />
+
+        <TextView
+            android:id="@+id/textview_show_assets_month"
+            style="@style/main_text_style"
+            android:text="@string/text_view_look_up_month_assets"
+            app:layout_constraintTop_toBottomOf="@id/textview_show_assets"
+            />
+
+        <TextView
+            android:id="@+id/textview_show_assets_year"
+            style="@style/main_text_style"
+            android:text="@string/text_view_look_up_year_assets"
+            app:layout_constraintTop_toBottomOf="@id/textview_show_assets_month"
+            />
+
+        <TextView
+            android:id="@+id/textview_income"
+            style="@style/main_text_style"
+            android:text="@string/text_view_loop_up_income"
+            app:layout_constraintTop_toBottomOf="@id/textview_show_assets_year"
+            />
+
+        <TextView
+            android:id="@+id/textview_spending"
+            style="@style/main_text_style"
+            android:text="@string/text_view_loop_up_spending"
+            app:layout_constraintTop_toBottomOf="@id/textview_income"
+            />
+
+        <Button
+            android:layout_marginStart="10dp"
+            android:id="@+id/button_speding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_speding"
+            app:layout_constraintBottom_toBottomOf="@id/layout"/>
+
+        <Button
+            android:id="@+id/button_spending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_income"
+            app:layout_constraintBottom_toBottomOf="@id/layout"
+            app:layout_constraintRight_toRightOf="@id/layout"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

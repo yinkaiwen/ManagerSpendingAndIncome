@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ManagerSpendingAndIncome</string>
+    <string name="init">正在加载数据</string>
+
+
+    <string name="action_settings">查看说明</string>
+    <string name="text_view_look_up_assets">查看资产</string>
+    <string name="text_view_look_up_month_assets">查看指定月份资产</string>
+    <string name="text_view_look_up_year_assets">查看指定年份资产</string>
+    <string name="text_view_loop_up_spending">查看支出</string>
+    <string name="text_view_loop_up_income">查看收入</string>
+
+    <string name="button_income">添加收入</string>
+    <string name="button_speding">添加支出</string>
+
+    <string name="title_assets">资产简介</string>
+</resources>
